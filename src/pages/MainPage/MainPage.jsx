@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import MainBackground from './MainBackground';
-import ContainerRow from '../../Components/Container/ContainerRow';
-import { useEffect } from 'react';
+import { useContext, useEffect } from 'react';
+import { OutletContext } from '../ForOutlet';
+
 
 const MainContainer = styled.div`
     display: flex;
@@ -11,9 +12,10 @@ const MainContainer = styled.div`
     gap: 10px;
 `;
 
-export default function Component({ $setting }) {
+export default function Component() {
 
-  useEffect(() => { $setting(true) }, []);
+  const setBackSetting = useContext(OutletContext);
+  setBackSetting(true);
 
   return (
     <MainBackground>

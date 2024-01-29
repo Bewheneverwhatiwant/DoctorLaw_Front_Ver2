@@ -3,19 +3,19 @@ import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import React, { useState, createContext, useContext } from 'react';
 
+export const OutletContext = createContext();
+
 export default function Component() {
     const [backSetting, setBackSetting] = useState(true);
-
-    const handleBackSetting = setting => {
-        setBackSetting(setting);
-    };
-
-    const FunctionContext = createContext();
 
     return (
         <>
             <Header $background={backSetting} />
-            <Outlet $setting={handleBackSetting} />
+
+            <OutletContext.Provider value={setBackSetting}>
+                <Outlet />
+            </OutletContext.Provider>
+
             <Footer />
         </>
     )
