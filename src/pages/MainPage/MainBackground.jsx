@@ -20,7 +20,8 @@ const BeigeContainer = styled.div`
     display: flex;
     width: 100%;
     height: 500px;
-    background-color: beige;
+    background-color: #000000;
+    min-height: 100vh;
 `;
 
 export default function Component({ $imgSrc, children }) {

@@ -5,7 +5,7 @@ import CustomImg from '../Container/CustomImg';
 const HeaderContainer = styled.header`
     width: 100%;
     position: relative;
-    background-color: ${props => props.$background || 'white'}; /* props로 넘어온 배경색을 설정하거나 기본값으로 흰색 사용 */
+    background-color: ${props => props.$background == true ? 'black' : 'white'}; /* props로 넘어온 배경색을 설정하거나 기본값으로 흰색 사용 */
     border-bottom: 2px solid #D9D9D9;
     display: flex;
     flex-direction: row;
