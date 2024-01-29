@@ -15,7 +15,9 @@ const MainContainer = styled.div`
 export default function Component() {
 
   const setBackSetting = useContext(OutletContext);
+
   setBackSetting(true);
+
 
   return (
     <MainBackground>
