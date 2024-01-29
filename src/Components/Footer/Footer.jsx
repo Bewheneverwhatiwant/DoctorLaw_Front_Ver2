@@ -10,7 +10,7 @@ const FooterContainer = styled.footer`
     justify-content: space-between;
     background: #18181C;
     color: white;
-    border-top" 2px solid #F0F0F0;
+    border-top: 1px solid #F0F0F0;
 `;
 
 const OneOfThree = styled.div`

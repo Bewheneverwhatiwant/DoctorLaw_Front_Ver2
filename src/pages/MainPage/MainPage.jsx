@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import MainBackground from './MainBackground';
 import { useContext, useEffect } from 'react';
 import { OutletContext } from '../ForOutlet';
+import TopBanner from './TopBanner';
 
 
 const MainContainer = styled.div`
@@ -22,9 +23,7 @@ export default function Component() {
   return (
     <MainBackground>
       <MainContainer>
-
-
-
+        <TopBanner />
       </MainContainer>
     </MainBackground>
   );
