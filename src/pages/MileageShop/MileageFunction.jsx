@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import StyledImg from '../../Components/Container/CustomImg';
+import { useNavigate } from 'react-router-dom';
 
 const MainContainer = styled.div`
     display: flex;
@@ -63,6 +64,11 @@ const Button = styled.button`
 
 export default function Component() {
 
+    const navigate = useNavigate();
+
+    const handleNavigate = () => {
+        navigate('/mileagecharge');
+    };
 
     return (
         <MainContainer>
@@ -73,7 +79,7 @@ export default function Component() {
                     <Detail>마일리지 충전 버튼을 눌러 새 페이지에서 마일리지 충전을 진행하세요.</Detail>
                     <Sizedbox height='40px' />
                     <Right>
-                        <Button>마일리지 충전</Button>
+                        <Button onClick={handleNavigate}>마일리지 충전</Button>
                     </Right>
                 </Container>
 
