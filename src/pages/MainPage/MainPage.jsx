@@ -6,6 +6,7 @@ import TopBanner from './TopBanner';
 import CurvedBanner from './CurvedBanner';
 import FunctionBanner from './FunctionBanner';
 import PriceBanner from './PriceBanner';
+import ModelBanner from './ModelBanner';
 
 
 const MainContainer = styled.div`
@@ -36,6 +37,9 @@ export default function Component() {
         <FunctionBanner />
         <Sizedbox />
         <PriceBanner />
+        <Sizedbox />
+        <Sizedbox />
+        <ModelBanner />
       </MainContainer>
     </MainBackground>
   );
