@@ -5,6 +5,7 @@ import { OutletContext } from '../ForOutlet';
 import TopBanner from './TopBanner';
 import CurvedBanner from './CurvedBanner';
 import FunctionBanner from './FunctionBanner';
+import PriceBanner from './PriceBanner';
 
 
 const MainContainer = styled.div`
@@ -33,6 +34,8 @@ export default function Component() {
         <CurvedBanner />
         <Sizedbox />
         <FunctionBanner />
+        <Sizedbox />
+        <PriceBanner />
       </MainContainer>
     </MainBackground>
   );
