@@ -5,6 +5,7 @@ import { OutletContext } from '../ForOutlet';
 import MileageList from './MileageList';
 import MileagePay from './MileagePay';
 import MileageInfo from './MileageInfo';
+import AdOrShare from './AdOrShare';
 
 const MainContainer = styled.div`
     display: flex;
@@ -64,6 +65,9 @@ export default function Component() {
                         <MileagePay />
                     </CustomColumn>
                 </CustomRow>
+                <HorLine />
+                <AdOrShare />
+                <Sizedbox />
             </MainContainer>
         </MileageChargebackground>
     );
