@@ -4,6 +4,7 @@ import { useContext, useEffect } from 'react';
 import { OutletContext } from '../ForOutlet';
 import MileageList from './MileageList';
 import MileagePay from './MileagePay';
+import MileageInfo from './MileageInfo';
 
 const MainContainer = styled.div`
     display: flex;
@@ -29,8 +30,10 @@ flex-direction: column;
 
 const VerLine = styled.div`
 width: 1px;
-height: 500px;
+height: 650px;
 background-color: #AEAEAE;
+margin-left: 35px;
+margin-right: 35px;
 `;
 
 const HorLine = styled.div`
@@ -51,11 +54,16 @@ export default function Component() {
     return (
         <MileageChargebackground>
             <MainContainer>
-                <CustomColumn>
-                    <MileageList />
-                    <HorLine />
-                    <MileagePay />
-                </CustomColumn>
+                <CustomRow>
+                    <MileageInfo />
+
+                    <VerLine />
+                    <CustomColumn>
+                        <MileageList />
+                        <HorLine />
+                        <MileagePay />
+                    </CustomColumn>
+                </CustomRow>
             </MainContainer>
         </MileageChargebackground>
     );
