@@ -3,6 +3,7 @@ import ForOutlet from "./pages/ForOutlet";
 import MainPage from "./pages/MainPage/MainPage";
 import MileageShop from "./pages/MileageShop/MileageShop";
 import MileageCharge from "./pages/MileageCharge/MileageCharge";
+import AnalyzeStart from "./pages/AnalyzeStart/AnalyzeStart";
 
 export default createBrowserRouter([
     {
@@ -20,6 +21,10 @@ export default createBrowserRouter([
             {
                 path: '/mileagecharge',
                 element: <MileageCharge />
+            },
+            {
+                path: "/analyzestart",
+                element: <AnalyzeStart />
             }
         ]
     }
