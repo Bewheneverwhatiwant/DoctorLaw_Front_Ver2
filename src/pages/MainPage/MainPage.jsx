@@ -7,6 +7,7 @@ import CurvedBanner from './CurvedBanner';
 import FunctionBanner from './FunctionBanner';
 import PriceBanner from './PriceBanner';
 import ModelBanner from './ModelBanner';
+import ShopBanner from './ShopBanner';
 
 
 const MainContainer = styled.div`
@@ -18,7 +19,8 @@ const MainContainer = styled.div`
 `;
 
 const Sizedbox = styled.div`
-height: 50px;
+  width: ${props => props.width || 'auto'};
+  height: ${props => props.height || '50px'};
 `;
 
 export default function Component() {
@@ -40,6 +42,9 @@ export default function Component() {
         <Sizedbox />
         <Sizedbox />
         <ModelBanner />
+        <Sizedbox />
+        <ShopBanner />
+        <Sizedbox height='250px' />
       </MainContainer>
     </MainBackground>
   );
