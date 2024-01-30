@@ -8,6 +8,7 @@ import FunctionBanner from './FunctionBanner';
 import PriceBanner from './PriceBanner';
 import ModelBanner from './ModelBanner';
 import ShopBanner from './ShopBanner';
+import ReviewBanner from './ReviewBanner';
 
 
 const MainContainer = styled.div`
@@ -45,6 +46,8 @@ export default function Component() {
         <Sizedbox />
         <ShopBanner />
         <Sizedbox height='250px' />
+        <ReviewBanner />
+        <Sizedbox />
       </MainContainer>
     </MainBackground>
   );
