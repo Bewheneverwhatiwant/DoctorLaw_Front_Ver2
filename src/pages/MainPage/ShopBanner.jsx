@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import ContainerRow from '../../Components/Container/ContainerRow';
-import ContainerColumn from '../../Components/Container/ContainerColumn';
+import { useNavigate } from 'react-router-dom';
 import StyledImg from '../../Components/Container/CustomImg';
 
 const MainContainer = styled.div`
@@ -102,6 +101,12 @@ font-size: 14px;
 `;
 
 export default function Component() {
+    const navigate = useNavigate();
+
+    const handleNavigate = () => {
+        navigate('/mileageshop');
+    };
+
     return (
         <MainContainer>
             <Back>
@@ -128,7 +133,7 @@ export default function Component() {
                             마일리지 구매로<br />더 값싸게 이용해보세요!
                         </ShopTitle>
                         <Sizedbox />
-                        <ShopButton>마일리지 샵 바로가기</ShopButton>
+                        <ShopButton onClick={handleNavigate}>마일리지 샵 바로가기</ShopButton>
                     </CustomColumn>
                     <StyledImg src={'img/img_shop.png'} width='450px' height='350px' />
                 </ShopContainer>
