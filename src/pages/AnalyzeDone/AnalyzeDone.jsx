@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import FileUpload from './FileUpload';
-import AgreeBox from './AgreeBox';
-import SelectionBox from './SelectionBox';
+import UpperContainer from './UpperContainer';
+import MidBox from './MidBox';
+import BottomBox from './BottomBox';
+
 
 const MainContainer = styled.div`
     display: flex;
@@ -10,12 +11,13 @@ const MainContainer = styled.div`
     width: 100%;
     gap: 10px;
 `
+
 export default function Component() {
     return (
         <MainContainer>  
-            <FileUpload />
-            <SelectionBox />
-            <AgreeBox />
+            <UpperContainer />
+            <MidBox />
+            <BottomBox />
         </MainContainer>
     );
 };
